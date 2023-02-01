@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>FUNBILL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: 80px;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .subbtn {
+            width: 80px;
+            padding: 10px 18px;
+            background-color: #04AA6D;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 160px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            padding-top: 16px;
+        }
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+
+<body class="main">
+
+
+    <nav width="100%" height="65px">
+        <a href="index">FUNBILL</a>
+        <a href="about">ABOUT</a>
+        <a href="registration" style="float: right" ;>SIGNUP</a>
+        <a href="login" style="float: right" ;>LOGIN</a>
+    </nav>
+    <br><br><br>
+    <div>
+        <table width="100%" height="100%">
+            <div style="height: 820px;">
+                <fieldset>
+                    <div style="margin-top: 5px; ">
+
+                        <h2>Login</h2>
+                    </div>
+
+                    <form method="post">
+                        <br>
+                        <div class="imgcontainer">
+                            <img src="images.png" alt="Avatar" class="avatar">
+                        </div>
+                        <br>
+                        <div class="container">
+                            <label for="uname"><b>Email :</b></label>
+                            <input type="text" placeholder="Enter your Email" name="uname" required>
+                            <br><br><br>
+                            <div style="margin-left: -30px;">
+                                <label for="psw"><b>Password :</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                            </div>
+
+                            <br><br>
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label>
+                            <br><br>
+
+                            <button type="button" class="cancelbtn"><a href="/"> Cancel </a></button>
+                            <button type="submit" class="subbtn"><a href="/home"> Login </a></button>
+
+                        </div>
+
+                    </form>
+
+                </fieldset>
+            </div>
+
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <table bgcolor="#D8E4FF" width="100%" height="40px">
+                <tr>
+                    <td align="center">
+                        <font color="black" size="3">Funbill.com,
+                            Copyright &copy;2022</font>
+                    </td>
+                </tr>
+            </table>
+            <table bgcolor="#00120B" width="100%" height="65px">
+                <tr>
+                    <td width="2%"></td>
+                    <td width="20%"><b><i>
+                                <font color="#D8E4FF" size="6">FUNBILL</font>
+                            </i></b></td>
+
+                    <td width="10%">
+                        <div style="padding-top: 1%;"><a href="about">
+                                <font color="#D8E4FF" size="4">ABOUT</font>
+                            </a><br>
+                            <a href="faq">
+                                <font color="#D8E4FF" size="4">FAQ</font>
+                            </a>
+
+                    <td width="10%">
+                        <div style="margin-top: 2%; margin-bottom: 2% ;"></div><a href="contact">
+                            <font color="#D8E4FF" size="4">CONTACT US</font>
+                        </a><br>
+                        <a href="privacypolicy">
+                            <font color="#D8E4FF" size="4">PRIVACY POLICY</font>
+                        </a>
+                </tr>
+            </table>
+        </table>
+    </div>
+
+</body>
+
+</html>

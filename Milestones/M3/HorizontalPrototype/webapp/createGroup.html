@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script>
+        $('#priceDropdown').dropdown('update')
+    </script>
+</head>
+  <body>
+    <div id="layout">
+      
+        <div id="head">
+            <div><h1>Funbill</h1></div>
+            <div>About</div>
+            <div><input type="text" placeholder="Search" ></div>
+            <div>Sign In</div>
+        </div>
+
+        <div id="top" class="h-100 d-inline-block font-weight-bold text-start">Groups</div>
+        <div class="card">
+            <div class="card-header text-start font-weight-normal rounded" style="background-color: #31E981;" style="margin-right: 10px;">
+               Creating a New Group 
+            </div>
+            <div class="card-body text-center">
+                <div class="input-group mb-3 w-100 p-3 text-center" id="centerContent">
+                    <h5 class="card-title" style="margin-right: 10px;">
+                       Name of group 
+                    </h5>
+                    <input type="text" class=" bg-light rounded border w-25" placeholder="The 3 Musketeers" aria-label="Username">
+                </div>
+                <div class="input-group mb-3 w-100 p-3 text-center" id="centerContent">
+                    <h5 class="card-title" style="margin-right: 10px;">
+                        Add a user
+                    </h5>
+                    <input type="text" class=" bg-light rounded border w-25" placeholder="Aramis" aria-label="Username">
+                </div>
+                <div class="input-group mb-4 w-100 p-2 text-center" id="centerContent">
+                    <div class="card text-white w-25 border rounded" style="background-color: #31E981;">
+                      <form action="">
+                        <label for="img">Add a group photo</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <input type="submit">
+                      </form>
+                    </div>
+                    
+                </div>
+                <form class="form-inline" id="centerContent">
+                    <label for="inputPassword5" style="margin-right: 10px;">Choose default split for group</label>
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Split</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <select class="rounded border"name="cars" id="cars">
+                                <option value="equal">Equally</option>
+                                <option value="percent">Percentage</option>
+                              </select>
+                        </div>
+                    </div>
+                </form>
+              <div>
+              <br>
+              <a href="http://54.215.245.137:3000/homepage" class="btn btn-danger">Cancel</a>
+              <a href="http://54.215.245.137:3000/homepage" class="btn btn-success">Save</a>
+            </div>
+          </div>
+        </div>
+        <div id="left">
+            <div id="dashboard">Dashboard</div>
+            <div id="activity">Activity</div>
+            <div id="groups">Groups</div>
+            <div id="friends">Friends</div>
+            <div id="invite">Invite Friends</div>
+        </div>
+
+        <div id="foot"><div>Funbill.com Copyright 2022</div><div>FUNBILL  ABOUT  FAQ  CONTACT US  PRIVACY POLICY</div>
+    </div>
+  </body>
+</html>
